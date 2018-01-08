@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haikaroseworx.note7app.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center|left"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTE8"
+            android:layout_weight="1"
+            android:textSize="28dp"
+            tools:fontFamily="@font/aclonica" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:textSize="24dp"
+            android:id="@+id/save"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/white"
+            android:layout_gravity="right|center"
+            android:text="SAVE"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:textColorHint="#7e7878"
+                android:padding="8dp"
+                android:id="@+id/title"
+                android:background="#c7c2c2"
+                android:hint="title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="300dp"
+                android:id="@+id/note"
+                android:hint="Note contents goes here"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textColorHint="#7e7878"
+                android:padding="8dp"
+                android:background="#c7c2c2"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FA515F"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/cancel"
+            android:text="CANCEL"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

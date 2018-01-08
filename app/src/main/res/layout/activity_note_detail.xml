@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haikaroseworx.note7app.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center|left"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 MAY 2017"
+            android:textSize="28dp"
+            android:layout_weight="1"
+            android:id="@+id/date"
+            tools:fontFamily="@font/aclonica" />
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/share_button"
+            android:src="@mipmap/ic_share"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="No note found"
+                        android:id="@+id/note_title"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/note"
+                        android:text="The image file should have .png extension. The size of the toolbar icons should be 16x16. To change the icon associated with a command, select the desired command in the list and click the Edit Action Icon button. In the Choose Actions Icon Path dialog box that opens, specify the location of the desired image. If necessary"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FA515F"
+            android:gravity="center"
+            android:id="@+id/update"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:textSize="24dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FA515F"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/delete"
+            android:text="DELETE"
+            android:textSize="24dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
