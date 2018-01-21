@@ -23,10 +23,12 @@ public class NoteReader {
         SQLiteDatabase database= db.getReadableDatabase();
 
 
-        Cursor cursor = database.query("NOTEITEM",
-                new String[]{"id","date","title","note"},null,null,null,null,null);
+        String orderByClause = "id DESC";
 
-        cursor.moveToFirst();
+        Cursor cursor = database.query("NOTEITEM",
+                new String[]{"id","date","title","note"},null,
+                null,null,null,orderByClause);
+
         while(cursor.moveToNext()){
 
             NoteItem noteItem = new NoteItem();

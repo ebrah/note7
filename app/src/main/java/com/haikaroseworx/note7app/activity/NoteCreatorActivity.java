@@ -81,7 +81,7 @@ public class NoteCreatorActivity extends AppCompatActivity {
                             NoteItem noteItem = new NoteItem();
                             noteItem.setTitle(title.getText().toString().trim());
                             noteItem.setNote(note.getText().toString().trim());
-                            String dateString = new SimpleDateFormat("EEE, d MMM yy").format(new Date());
+                            String dateString = new SimpleDateFormat("EEE, d yyyy").format(new Date());
                             noteItem.setDate(dateString);
                             NoteCreator.createNote(getBaseContext(),noteItem);
                             Toast.makeText(getBaseContext(),"Note created",Toast.LENGTH_LONG).show();

@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         noteItemAdapter= new NoteItemAdapter(getBaseContext(),noteItemList);
         recyclerView.setAdapter(noteItemAdapter);
 
+
         if(noteItemList.size()>0){
             recyclerView.setVisibility(View.VISIBLE);
             findViewById(R.id.no_data).setVisibility(View.INVISIBLE);

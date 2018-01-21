@@ -3,5 +3,33 @@
     <color name="colorPrimary">#433656</color>
     <color name="colorPrimaryDark">#3c324b</color>
     <color name="colorAccent">#ECBB74</color>
+
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="blue">#6DBCDB</color>
+    <color name="red">#FC4349</color>
+    <color name="zamb">#2C3E50</color>
+    <color name="greyish">#D7DADB</color>
+    <color name="background">#EEEEEE</color>
+
+    <color name="faded_blue">#CC6DBCDB</color>
+    <color name="faded_red">#CCFC4349</color>
+    <color name="faded_zamb">#CC2C3E50</color>
+
+
+
+    <!-- Dark Text Color for Light Background -->
+    <color name="textDarkPrimary">#DE000000</color> <!--DE for %87 opacity-->
+    <color name="textDarkSecondary">#8A000000</color> <!--8A for %54 opacity-->
+    <color name="textDarkDisabled">#61000000</color> <!--61 for %38 opacity-->
+
+    <!-- White Text Color for Dark Background -->
+    <color name="textLightPrimary">#FFFFFF</color> <!--%100 opacity-->
+    <color name="textLightSecondary">#B2FFFFFF</color> <!--B2 for %70 opacity-->
+    <color name="textLightDisabled">#80FFFFFF</color> <!--80 for %50 opacity-->
+    <color name="textLightDisabledDEPRECATED">#4CFFFFFF</color>
+    <color name="desired_background_color">#EDEDED</color> <!--4C for %30 opacity-->
+
 </resources>
