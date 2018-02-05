@@ -8,14 +8,13 @@ import static com.haikaroseworx.note7app.pojo.NoteItem.NOTE_TABLE_SQL_CREATE;
 import static com.haikaroseworx.note7app.pojo.NoteItem.NOTE_TABLE_SQL_DROP;
 
 /**
- * Created by hikaroseworx on 1/6/18.
+ * updated by Ebrah on Feb 5, 2018
  */
 
 public class NoteDatabaseHelper extends SQLiteOpenHelper{
 
     public static String DATABASE_NAME = "NOTE_DB";
     public static int DATABASE_VERSION = 1;
-
 
 
     public NoteDatabaseHelper(Context context){

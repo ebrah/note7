@@ -3,7 +3,7 @@ package com.haikaroseworx.note7app.pojo;
 import java.io.Serializable;
 
 /**
- * Created by hikaroseworx on 1/6/18.
+ * created by Ebrah on Feb 5, 2018.
  */
 
 public class NoteItem implements Serializable{
