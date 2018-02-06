@@ -10,7 +10,7 @@ import static android.content.Intent.EXTRA_TEXT;
  * Created by hikaroseworx on 1/6/18.
  */
 
-public class NoteSharer {
+public class NoteShare {
     public static void shareNote(Context context, NoteItem noteItem){
 
         Intent intent = new Intent(ACTION_SEND);

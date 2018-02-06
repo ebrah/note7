@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.haikaroseworx.note7app.R;
 import com.haikaroseworx.note7app.pojo.NoteDeleter;
 import com.haikaroseworx.note7app.pojo.NoteItem;
-import com.haikaroseworx.note7app.pojo.NoteSharer;
+import com.haikaroseworx.note7app.pojo.NoteShare;
 
 import static com.haikaroseworx.note7app.activity.NoteCreatorActivity.UPDATE_INTENT_DATA;
 
@@ -41,7 +41,7 @@ public class NoteDetailActivity extends AppCompatActivity {
         findViewById(R.id.share_button).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                NoteSharer.shareNote(NoteDetailActivity.this,noteItem);
+                NoteShare.shareNote(NoteDetailActivity.this,noteItem);
             }
         });
 

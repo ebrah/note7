@@ -10,7 +10,7 @@ import com.haikaroseworx.note7app.data_manager.NoteDatabaseHelper;
  * Created by hikaroseworx on 1/6/18.
  */
 
-public class NoteUpdater {
+public class NoteUpdate {
 
     public static void updateNote( Context context,NoteItem noteItem){
 

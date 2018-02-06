@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.haikaroseworx.note7app.R;
 import com.haikaroseworx.note7app.pojo.NoteCreator;
 import com.haikaroseworx.note7app.pojo.NoteItem;
-import com.haikaroseworx.note7app.pojo.NoteUpdater;
+import com.haikaroseworx.note7app.pojo.NoteUpdate;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -72,7 +72,7 @@ public class NoteCreatorActivity extends AppCompatActivity {
                             noteItem.setTitle(title.getText().toString().trim());
                             noteItem.setNote(note.getText().toString().trim());
 
-                            NoteUpdater.updateNote(getBaseContext(),noteItem);
+                            NoteUpdate.updateNote(getBaseContext(),noteItem);
                             Toast.makeText(getBaseContext(),"Note updated",Toast.LENGTH_LONG).show();
                             finish();
 
